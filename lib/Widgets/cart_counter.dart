@@ -206,6 +206,7 @@ class _CartCounterState extends State<CartCounter> {
               child: Container(
                 alignment: Alignment.center,
                 child: TextField(
+                  keyboardType: TextInputType.number,
                     onEditingComplete: () {
                       if (valueController.text.isEmpty) {
                         setState(() {

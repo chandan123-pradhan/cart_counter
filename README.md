@@ -1,6 +1,6 @@
 # cart_counter
 
-A Flutter Package which will start Global Loader from any where in your code.
+A Flutter Package which Helps you can Implement Cart Counter in your flutter project. Its really Simple and Easy to use. This Package will provide me a default design and if you want to change according to you then you can also do this. In This Package you can enable TextField for custom Enter value. simple in CartCounter widget you need to pass isEnable paramter true like: isEnable:true then you'll able to Enter custom value.
 
 ## Screenshots
 
