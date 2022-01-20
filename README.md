@@ -4,7 +4,10 @@ A Flutter Package which Helps you can Implement Cart Counter in your flutter pro
 
 ## Screenshots
 
-<img src="cart_counter.jpg" height="300em" />
+
+<td>
+<img src="https://github.com/chandan123-pradhan/cart_counter/blob/main/cart_counter.jpg" alt="">
+</tr>
 
 ## Usage
 [Example](https://github.com/chandan123-pradhan/cart_counter/blob/main/example/main.dart)
