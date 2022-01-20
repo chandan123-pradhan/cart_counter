@@ -7,17 +7,17 @@ A Flutter Package which Helps you can Implement Cart Counter in your flutter pro
 <img src="cart_counter.jpg" height="300em" />
 
 ## Usage
-[Example](hhttps://github.com/chandan123-pradhan/Global-Loader/tree/main/example/global_loader)
+[Example](https://github.com/chandan123-pradhan/cart_counter/blob/main/example/main.dart)
 
 To use this package:
 
-* add the dependency to your [pubspec.yaml](https://github.com/chandan123-pradhan/Global-Loader/blob/main/example/global_loader/pubspec.yaml) file.
+* add the dependency to your [pubspec.yaml](https://github.com/chandan123-pradhan/cart_counter/blob/main/pubspec.yaml) file.
 
 ```yaml
     dependencies:
       flutter:
         sdk: flutter
-      global_loader: ^0.0.1
+      cart_counter: ^0.0.1
 ```
 
 ### How to use
@@ -86,13 +86,3 @@ class HomePage extends StatelessWidget {
 ```
 
 ## Getting Started
-
-
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
