@@ -55,12 +55,9 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-           
-            Container(
+           Container(
               width: 150,
               child: CartCounter(
-                
-               
                 maximumValue: 10,
                 minimumValue: 3,
                 value: 3,
@@ -68,8 +65,7 @@ class HomePage extends StatelessWidget {
                     color: Colors.red,
                     fontSize: 30,
                     fontWeight: FontWeight.bold),
-               
-                onChanged: (val) {
+               onChanged: (val) {
                   //here in val variable you'll get updated counter value.
                   print(val);
                 },
