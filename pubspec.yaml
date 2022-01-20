@@ -1,7 +1,8 @@
 name: cart_counter
-description: A new Flutter package project.
+description: This is a package which helps You Can Implement Cart Counter in your flutter project easily.
 version: 0.0.1
-homepage:
+homepage: https://github.com/chandan123-pradhan/cart_counter
+
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
