@@ -23,73 +23,65 @@ To use this package:
 ### How to use
 
 ```dart
-   
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  
+import 'package:cart_counter/Widgets/CartCounter.dart';
+import 'package:flutter/material.dart';
 
-  @override
-  _HomePageState createState() => _HomePageState();
+void main() {
+  runApp(MyApp());
 }
 
-class _HomePageState extends State<HomePage> {
-  GlobalLoader globalLoader = new GlobalLoader();
-  
- 
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Cart Counter',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: HomePage());
+  }
+}
 
+class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        body: Container(
+      height: double.infinity,
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            InkWell(
-                onTap: () {
-                  // This code helps fancy loader.
-                  globalLoader.startFancyLoader(60,60);
-
-
+           
+            Container(
+              width: 150,
+              child: CartCounter(
+                
+               
+                maximumValue: 10,
+                minimumValue: 3,
+                value: 3,
+                style: TextStyle(
+                    color: Colors.red,
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold),
+               
+                onChanged: (val) {
+                  //here in val variable you'll get updated counter value.
+                  print(val);
                 },
-                child: Container(
-                    alignment: Alignment.center,
-                    height: 50,
-                    width: 150,
-                    decoration: BoxDecoration(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.circular(20)),
-                    child: Text(
-                      "Start",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold),
-                    ))),
-            InkWell(
-                onTap: () {
-                    // this line will stop your current loader.
-                  globalLoader.stop();
-                },
-                child: Container(
-                    alignment: Alignment.center,
-                    height: 50,
-                    width: 150,
-                    decoration: BoxDecoration(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.circular(20)),
-                    child: Text(
-                      "Stop",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold),
-                    )))
+              ),
+            ),
           ],
         ),
       ),
-    );
+    ));
   }
 }
+
 
 ```
 
